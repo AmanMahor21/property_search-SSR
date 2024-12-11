@@ -7,9 +7,9 @@ const SearchListingPage = ({ location, properties }) => {
   return (
     <div className="flex bg-slate-600">
       <h1>{location ? `Properties in ${location}` : "All Properties"}</h1>
-      <PropertySearch /> {/* Search component to allow filtering */}
+      <PropertySearch />
       {properties.length === 0 ? (
-        <p>No properties found</p> // Message when no properties match the criteria
+        <p>No properties found</p>
       ) : (
         <PropertyList properties={properties} />
       )}
@@ -18,4 +18,3 @@ const SearchListingPage = ({ location, properties }) => {
 };
 
 export default SearchListingPage;
-

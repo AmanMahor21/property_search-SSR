@@ -1,5 +1,4 @@
 import express from "express";
-// import propertyRoutes from "./routes/propertyRoutes";
 import propertyRoutes from "../server/routes/property.routes";
 
 const app = express();
